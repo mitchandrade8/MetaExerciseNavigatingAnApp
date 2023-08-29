@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        // I believe navigationview is depreciated but do not recall the new thing
+        NavigationView {
+            VStack {
+                Text("Exercise 1")
+            }
         }
-        .padding()
     }
 }
 
@@ -24,3 +23,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
