@@ -9,7 +9,22 @@ import SwiftUI
 
 struct MyTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TabView{
+                
+                Text("This is the Share View")
+                    .tabItem({
+                        Label("Share", systemImage: "square.and.arrow.up")
+                    })
+                
+                Text("This is the Trash View")
+                    .tabItem({
+                        Label("Trash", systemImage: "trash")
+                    })
+                
+            }
+        }
+        
     }
 }
 

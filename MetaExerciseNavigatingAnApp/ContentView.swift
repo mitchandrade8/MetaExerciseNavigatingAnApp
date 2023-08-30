@@ -13,11 +13,11 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Text("Exercise 1")
-                NavigationLink(destination: Text("Do something")) {
-                    
+                NavigationLink(destination: MyTabView()){
+                    Text("Do something")
                 }
             }
-            .navigationTitle("Litlle Lemon")
+            .navigationTitle("Little Lemon")
         }
     }
 }
